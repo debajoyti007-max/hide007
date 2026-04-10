@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aether Crystalline | The Ethereal Vault</title>
+    <meta name="description" content="A premium gallery for digital artifacts. Experience The Ethereal Vault.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="vault-header glass-panel">
+        <div class="container header-inner">
+            <a href="#" class="logo">Aether Crystalline</a>
+            <nav style="display: flex; align-items: center; gap: 1rem;">
+                <a href="#gallery" class="btn btn-tertiary label-md">Gallery</a>
+                <a href="#access" class="btn btn-secondary label-md">Request Access</a>
+                <a href="https://www.instagram.com/debajoyti_007?igsh=dHVnZnQ3NTNxcHB2" target="_blank" rel="noopener noreferrer" class="btn btn-tertiary" style="padding: 0.5rem; display: flex; align-items: center; justify-content: center; height: 100%; border-radius: 50%;" title="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="container" style="position: relative; width: 100%; display: flex;">
+                <div class="hero-content">
+                    <span class="label-md" style="color: var(--primary); margin-bottom: 1rem; display: block;">Initiation Protocol</span>
+                    <h1 class="display-lg hero-title">The Ethereal Vault</h1>
+                    <p class="body-md hero-description">
+                        Explore an immersive curation of digital artifacts. We reject the flat web in favor of depth, 
+                        light refraction, and atmospheric mystery. Witness the next evolution of interaction.
+                    </p>
+                    <div style="display: flex; gap: 1rem; align-items: center;">
+                        <button class="btn btn-primary label-md">Enter Vault</button>
+                        <button class="btn btn-tertiary label-md">View Specs</button>
+                    </div>
+                </div>
+                <div class="hero-artifact">
+                    <!-- Atmospheric artifact representation -->
+                    <div style="width: 200px; height: 200px; background: rgba(255,255,255,0.05); transform: rotate(45deg); border: 1px solid rgba(255,255,255,0.2); display: flex; align-items:center; justify-content:center; backdrop-filter: blur(10px); z-index: 2;">
+                        <span class="label-md">Artifact 00X</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="vault-grid">
+            <div class="container">
+                <h2 class="section-title">Archived Formats</h2>
+                
+                <div style="display:flex; justify-content:center; gap: 1rem; margin-bottom: 4rem;">
+                    <div class="chip selected">All Specs</div>
+                    <div class="chip">Prismatic</div>
+                    <div class="chip">Obsidian</div>
+                </div>
+
+                <div class="cards-container">
+                    <article class="glass-card card-ambient-glow ghost-border">
+                        <div class="card-image-placeholder"></div>
+                        <span class="label-md card-label" style="color: var(--primary)">Platform</span>
+                        <h3 class="card-title">Quantum Core</h3>
+                        <p class="body-md">A sophisticated containment unit harnessing temporal fluctuations designed for high-density storage.</p>
+                    </article>
+
+                    <article class="glass-card card-ambient-glow ghost-border">
+                        <div class="card-image-placeholder"></div>
+                        <span class="label-md card-label" style="color: var(--primary)">Release Date</span>
+                        <h3 class="card-title">Neon Shard</h3>
+                        <p class="body-md">Shattered remnants of the original central terminal, still pulsing with baseline energy.</p>
+                    </article>
+
+                    <article class="glass-card card-ambient-glow ghost-border">
+                        <div class="card-image-placeholder"></div>
+                        <span class="label-md card-label" style="color: var(--primary)">Framework</span>
+                        <h3 class="card-title">Abyssal Drive</h3>
+                        <p class="body-md">Constructed entirely from dark matter derivatives. Information retrieval is instantaneous.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="access" style="padding: 8rem 0; background-color: var(--surface-container-lowest);">
+            <div class="container" style="max-width: 600px; margin: 0 auto; text-align: center;">
+                <h2 class="section-title" style="margin-bottom: 2rem;">Acquire Access Key</h2>
+                <p class="body-md" style="margin-bottom: 3rem;">Submit your frequency signature to request clearance.</p>
+                <form id="accessForm" style="display: flex; flex-direction: column; gap: 2rem; align-items: center; background: var(--surface-container); padding: 4rem; border-radius: 1.5rem;" class="ghost-border card-ambient-glow">
+                    <div style="width: 100%; text-align: left;">
+                        <input type="text" id="signature" class="ethereal-input" placeholder="Frequency Signature (e.g. 0xA89...)">
+                    </div>
+                    <button type="submit" class="btn btn-primary label-md" style="width: 100%;">Transmit</button>
+                    <div id="formStatus" class="body-md" style="display: none; color: var(--primary);">Transmission successful. Evaluating frequency...</div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="vault-footer" style="padding: 3rem 0; text-align: center; border-top: 1px solid rgba(255,255,255,0.05); background-color: var(--surface-container-lowest);">
+        <div class="container">
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem;">
+                <p class="body-md" style="color: rgba(255,255,255,0.6);">© 2026 Aether Crystalline Portfolio.</p>
+                <div style="display: flex; gap: 1rem;">
+                    <a href="https://www.instagram.com/debajoyti_007?igsh=dHVnZnQ3NTNxcHB2" target="_blank" rel="noopener noreferrer" style="color: var(--primary); text-decoration: none; display: flex; align-items: center; gap: 0.5rem;" class="label-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                        Follow on Instagram
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./main.js"></script>
+</body>
+</html>
